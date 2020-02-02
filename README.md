@@ -1,13 +1,13 @@
 # BubblePicker
 
 [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)]()
-[![](https://jitpack.io/v/apps-in/BubblePicker.svg)](https://jitpack.io/#apps-in/PickImage)
+[![](https://jitpack.io/v/apps-in/PickImage.svg)](https://jitpack.io/#apps-in/PickImage)
 
 
 Simplified version of [PickImage widget](https://github.com/jrvansuita/PickImage)
 
 ## Requirements
-- Android SDK 16+
+- Android SDK 21+
 
 ## Usage
 
