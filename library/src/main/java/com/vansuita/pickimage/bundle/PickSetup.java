@@ -25,7 +25,7 @@ public class PickSetup implements Serializable {
     private String title;
     private int titleColor;
     private int titleSize;
-    private Typeface titleTypeface;
+    private int titleTypeface;
 
     private int backgroundColor;
 
@@ -35,12 +35,12 @@ public class PickSetup implements Serializable {
     private String cancelText;
     private int cancelTextColor;
     private int cancelTextSize;
-    private Typeface cancelTextTypeface;
+    private int cancelTextTypeface;
 
     private int buttonIconColor;
     private int buttonTextColor;
     private int buttonTextSize;
-    private Typeface buttonTextTypeface;
+    private int buttonTextTypeface;
 
     private float dimAmount;
     private boolean flip;
@@ -106,11 +106,11 @@ public class PickSetup implements Serializable {
         return this;
     }
 
-    public Typeface getTitleTypeface() {
+    public int getTitleTypeface() {
         return titleTypeface;
     }
 
-    public PickSetup setTitleTypeface(Typeface titleTypeface) {
+    public PickSetup setTitleTypeface(int titleTypeface) {
         this.titleTypeface = titleTypeface;
         return this;
     }
@@ -178,11 +178,11 @@ public class PickSetup implements Serializable {
         return this;
     }
 
-    public Typeface getButtonTextTypeface() {
+    public int getButtonTextTypeface() {
         return buttonTextTypeface;
     }
 
-    public PickSetup setButtonTextTypeface(Typeface buttonTextTypeface) {
+    public PickSetup setButtonTextTypeface(int buttonTextTypeface) {
         this.buttonTextTypeface = buttonTextTypeface;
         return this;
     }
@@ -224,11 +224,11 @@ public class PickSetup implements Serializable {
         return this;
     }
 
-    public Typeface getCancelTextTypeface() {
+    public int getCancelTextTypeface() {
         return cancelTextTypeface;
     }
 
-    public PickSetup setCancelTextTypeface(Typeface cancelTextTypeface) {
+    public PickSetup setCancelTextTypeface(int cancelTextTypeface) {
         this.cancelTextTypeface = cancelTextTypeface;
         return this;
     }

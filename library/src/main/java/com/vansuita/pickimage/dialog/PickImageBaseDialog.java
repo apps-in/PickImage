@@ -2,6 +2,7 @@ package com.vansuita.pickimage.dialog;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
@@ -9,6 +10,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.DialogFragment;
 import androidx.cardview.widget.CardView;
 import androidx.appcompat.widget.LinearLayoutCompat;
@@ -214,8 +216,9 @@ public abstract class PickImageBaseDialog extends DialogFragment implements IPic
             tvTitle.setTextSize(setup.getTitleSize());
         }
 
-        if (setup.getTitleTypeface() != null){
-            tvTitle.setTypeface(setup.getTitleTypeface());
+        if (setup.getTitleTypeface() != 0){
+            Typeface typeface = ResourcesCompat.getFont(getContext(), setup.getTitleTypeface());
+            tvTitle.setTypeface(typeface);
         }
 
         if (setup.getButtonTextColor() != 0) {
@@ -228,9 +231,10 @@ public abstract class PickImageBaseDialog extends DialogFragment implements IPic
             tvGallery.setTextSize(setup.getButtonTextSize());
         }
 
-        if (setup.getButtonTextTypeface() != null){
-            tvCamera.setTypeface(setup.getButtonTextTypeface());
-            tvGallery.setTypeface(setup.getButtonTextTypeface());
+        if (setup.getButtonTextTypeface() != 0){
+            Typeface typeface = ResourcesCompat.getFont(getContext(), setup.getButtonTextTypeface());
+            tvCamera.setTypeface(typeface);
+            tvGallery.setTypeface(typeface);
         }
 
         if (Build.VERSION.SDK_INT >= 21) {
@@ -254,8 +258,9 @@ public abstract class PickImageBaseDialog extends DialogFragment implements IPic
             tvCancel.setTextSize(setup.getCancelTextSize());
         }
 
-        if (setup.getCancelTextTypeface() != null){
-            tvCancel.setTypeface(setup.getCancelTextTypeface());
+        if (setup.getCancelTextTypeface() != 0){
+            Typeface typeface = ResourcesCompat.getFont(getContext(), setup.getCancelTextTypeface());
+            tvCancel.setTypeface(typeface);
         }
 
         if (setup.getCameraButtonText() != null)
