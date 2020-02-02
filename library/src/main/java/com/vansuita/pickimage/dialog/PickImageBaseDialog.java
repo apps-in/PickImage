@@ -240,10 +240,14 @@ public abstract class PickImageBaseDialog extends DialogFragment implements IPic
         if (Build.VERSION.SDK_INT >= 21) {
             if (setup.getButtonIconColor() != 0) {
                 for (Drawable drawable : tvCamera.getCompoundDrawables()) {
-                    drawable.setTint(setup.getButtonIconColor());
+                    if (drawable != null) {
+                        drawable.setTint(setup.getButtonIconColor());
+                    }
                 }
                 for (Drawable drawable : tvGallery.getCompoundDrawables()) {
-                    drawable.setTint(setup.getButtonIconColor());
+                    if (drawable != null) {
+                        drawable.setTint(setup.getButtonIconColor());
+                    }
                 }
             }
         }
