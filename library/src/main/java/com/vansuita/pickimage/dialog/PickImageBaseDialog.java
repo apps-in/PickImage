@@ -2,6 +2,7 @@ package com.vansuita.pickimage.dialog;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
@@ -242,11 +243,13 @@ public abstract class PickImageBaseDialog extends DialogFragment implements IPic
                 for (Drawable drawable : tvCamera.getCompoundDrawables()) {
                     if (drawable != null) {
                         drawable.setTint(setup.getButtonIconColor());
+                        drawable.setTintMode(PorterDuff.Mode.SRC_ATOP);
                     }
                 }
                 for (Drawable drawable : tvGallery.getCompoundDrawables()) {
                     if (drawable != null) {
                         drawable.setTint(setup.getButtonIconColor());
+                        drawable.setTintMode(PorterDuff.Mode.SRC_ATOP);
                     }
                 }
             }
