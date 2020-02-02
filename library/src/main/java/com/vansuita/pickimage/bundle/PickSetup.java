@@ -101,16 +101,18 @@ public class PickSetup implements Serializable {
         return titleSize;
     }
 
-    public void setTitleSize(int titleSize) {
+    public PickSetup setTitleSize(int titleSize) {
         this.titleSize = titleSize;
+        return this;
     }
 
     public Typeface getTitleTypeface() {
         return titleTypeface;
     }
 
-    public void setTitleTypeface(Typeface titleTypeface) {
+    public PickSetup setTitleTypeface(Typeface titleTypeface) {
         this.titleTypeface = titleTypeface;
+        return this;
     }
 
     public int getBackgroundColor() {
@@ -153,8 +155,9 @@ public class PickSetup implements Serializable {
         return buttonIconColor;
     }
 
-    public void setButtonIconColor(int buttonIconColor) {
+    public PickSetup setButtonIconColor(int buttonIconColor) {
         this.buttonIconColor = buttonIconColor;
+        return this;
     }
 
     public int getButtonTextColor() {
@@ -170,16 +173,18 @@ public class PickSetup implements Serializable {
         return buttonTextSize;
     }
 
-    public void setButtonTextSize(int buttonTextSize) {
+    public PickSetup setButtonTextSize(int buttonTextSize) {
         this.buttonTextSize = buttonTextSize;
+        return this;
     }
 
     public Typeface getButtonTextTypeface() {
         return buttonTextTypeface;
     }
 
-    public void setButtonTextTypeface(Typeface buttonTextTypeface) {
+    public PickSetup setButtonTextTypeface(Typeface buttonTextTypeface) {
         this.buttonTextTypeface = buttonTextTypeface;
+        return this;
     }
 
     public float getDimAmount() {
@@ -214,16 +219,18 @@ public class PickSetup implements Serializable {
         return cancelTextSize;
     }
 
-    public void setCancelTextSize(int cancelTextSize) {
+    public PickSetup setCancelTextSize(int cancelTextSize) {
         this.cancelTextSize = cancelTextSize;
+        return this;
     }
 
     public Typeface getCancelTextTypeface() {
         return cancelTextTypeface;
     }
 
-    public void setCancelTextTypeface(Typeface cancelTextTypeface) {
+    public PickSetup setCancelTextTypeface(Typeface cancelTextTypeface) {
         this.cancelTextTypeface = cancelTextTypeface;
+        return this;
     }
 
     public int getWidth() {
