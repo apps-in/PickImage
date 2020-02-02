@@ -76,7 +76,7 @@
                         style="@style/option"
                         android:layout_width="match_parent"
                         android:layout_weight="0.5"
-                        android:drawableLeft="@drawable/camera"
+                        android:drawableLeft="@drawable/ic_camera"
                         android:drawablePadding="10dp"
                         android:gravity="left|center_vertical"
                         android:text="@string/camera"
@@ -87,7 +87,7 @@
                         style="@style/option"
                         android:layout_width="match_parent"
                         android:layout_weight="0.5"
-                        android:drawableLeft="@drawable/gallery"
+                        android:drawableLeft="@drawable/ic_gallery"
                         android:drawablePadding="10dp"
                         android:gravity="left|center_vertical"
                         android:text="@string/gallery" />

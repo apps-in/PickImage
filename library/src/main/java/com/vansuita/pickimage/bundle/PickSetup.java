@@ -377,10 +377,11 @@ public class PickSetup implements Serializable {
                 .setPickTypes(EPickType.CAMERA, EPickType.GALLERY)
                 .setProgressText("Loading...")
                 .setButtonOrientation(LinearLayout.VERTICAL)
-                .setCameraIcon(R.drawable.camera)
+                .setCameraIcon(R.drawable.ic_camera)
                 .setSystemDialog(false)
                 .setCameraToPictures(true)
-                .setGalleryIcon(R.drawable.gallery)
+                .setGalleryIcon(R.drawable.ic_gallery)
+                .setButtonIconColor(Color.WHITE)
                 .setVideo(false);
     }
 
